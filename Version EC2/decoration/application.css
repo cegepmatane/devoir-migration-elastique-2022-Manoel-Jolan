@@ -1,0 +1,43 @@
+﻿body {
+  background-image: url("https://i.pinimg.com/originals/d1/b8/4d/d1b84d734786a38c5565b47aeb5e69dd.png");
+  background-color: #cccccc;
+  background-attachment: fixed;
+}
+h1 {
+  color: white;
+  text-shadow: 5px 5px black;
+  text-align: center;
+  font-size: 150px;
+}
+
+h2 {
+  color: white;
+  text-shadow: 5px 5px black;
+  text-align: center;
+  font-size: 35px;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+a {
+  color: white;
+  font-size: 75px;
+  text-shadow: 5px 5px black;
+}
+
+.neonText {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f11,
+      0 0 82px #f11,
+      0 0 92px #f11,
+      0 0 102px #f11,
+      0 0 151px #f11;
+}
+

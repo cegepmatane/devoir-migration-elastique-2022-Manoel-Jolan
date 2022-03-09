@@ -1,2 +1,7 @@
 # devoir-migration-elastique-2022-Manoel-Jolan
-devoir-migration-elastique-2022-Chopv1 created by GitHub Classroom
+# URL 
+## Jolan
+http://3.208.129.152/  
+
+## Manoël
+http://54.92.236.140/

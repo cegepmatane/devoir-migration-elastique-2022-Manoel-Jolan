@@ -1,0 +1,12 @@
+2022-03-08 23:37:21,730 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2022-03-08 23:37:21,730 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\manoe\AppData\Local\Programs\Python\Python39\lib\site-packages\instabot\bot\bot.py
+2022-03-08 23:37:21,731 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2022-03-08 23:37:21,951 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2022-03-08 23:37:22,162 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2022-03-08 23:37:22,369 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2022-03-08 23:37:22,568 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2022-03-08 23:37:26,078 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [400]>
+2022-03-08 23:37:26,078 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"challenge_required","challenge":{"url":"https://i.instagram.com/challenge/AXF5hhE-k-w0sQeJLF11gdXWtZJ4nhl70cFejij4jK9y5JXq68uGLsgdAhKc9l5dFtI7JH0/dje1MvPSEr/","api_path":"/challenge/AXF5hhE-k-w0sQeJLF11gdXWtZJ4nhl70cFejij4jK9y5JXq68uGLsgdAhKc9l5dFtI7JH0/dje1MvPSEr/","hide_webview_header":true,"lock":true,"logout":false,"native_flow":true,"flow_render_type":0},"status":"fail","error_type":"checkpoint_challenge_required"}'
+2022-03-08 23:37:26,078 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2022-03-08 23:37:26,079 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: challenge_required
+2022-03-08 23:37:26,079 - instabot version: 0.117.0 (api) - INFO - Error type: checkpoint_challenge_required

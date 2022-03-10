@@ -1,0 +1,119 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> Liste d'animé </title>
+    <link rel="stylesheet" href="decoration/application.css">
+    <style></style>
+    <script src="Anime.js"></script>
+    <script src="AnimeDAO.js"></script>
+    <script src="VueAnime.js"></script>
+    <script src="VueListeAnime.js"></script>
+    <script src="VueAjouterAnime.js"></script>
+    <script src="VueModifierAnime.js"></script>
+    <script defer src="Application.js"></script>
+  </head>
+<body>
+  <div id="page-chargement-application"> Chargement de l'application </div>
+
+  <script type="plain/text" id="html-vue-anime">
+  <div class="page">
+    <h1 class="neonText">Anime</h1>
+    <h2 class="neonText">Titre</h2>
+    <p class="neonText" id="anime-titre"></p>
+    <h2 class="neonText">Année</h2>
+    <p class="neonText" id="anime-annee"></p>
+    <h2 class="neonText">Genre</h2>
+    <p class="neonText" id="anime-genre"></p>
+    <h2 class="neonText">Studio</h2>
+    <p class="neonText" id="anime-studio"></p>
+    <h2 class="neonText">Id</h2>
+    <p class="neonText" id="anime-id"></p>
+    <a class="neonText" href="#" class="action">Revenir à la liste</a> <br>
+    <a class="neonText" href="#modifier-anime" class="action">Faire une modification</a>
+  </div>
+  </script>
+
+  <script type="plain/text" id="html-vue-ajouter-anime">
+  <div class="page">
+    <h1 class="neonText">Ajouter un anime</h1>
+    <form id="formulaire-ajouter">
+      <fieldset>
+        <legend class="neonText">Description du nouvel animé</legend>
+        <div>
+          <label for="anime-titre" class="neonText">Titre</label>
+          <input type="text" id="anime-titre"/>
+        </div>
+        <div>
+          <label for="anime-marque" class="neonText">Année</label>
+          <input type="text" id="anime-annee"/>
+        </div>
+        <div>
+          <label for="anime-marque" class="neonText">Genre</label>
+          <input type="text" id="anime-genre"/>
+        </div>
+        <div>
+          <label for="anime-marque" class="neonText">Studio</label>
+          <input type="text" id="anime-studio"/>
+        </div>
+      </fieldset>
+      <input class="action" type="submit" id="enregistrer" value="Enregistrer"/>
+    </form>
+    <a class="neonText" href="#" class="action">Annuler et revenir sur la liste</a>
+  </div>
+  </script>
+
+  <script type="plain/text" id="html-vue-liste-anime">
+  <div class="page">
+     <h1 class="neonText"> Liste d'animés </h1>
+    <ul id="liste-anime">
+      <li><a class="neonText" href="#anime/{Anime.id}" class="liste-anime-item">{Anime.titre}</a></li>
+    </ul>
+    <br><br>  
+    <a class="neonText" href="#ajouter-anime">Ajouter un animé</a>
+  </div>
+  </script>
+
+  <script type="plain/text" id="html-vue-modifier-anime">
+    <div class="page">
+      <h1 class="neonText">Modifier un anime</h1>
+
+      <h2 class="neonText">Titre</h2>
+      <p class="neonText" id="anime-titre"></p>
+      <h2 class="neonText">Année</h2>
+      <p class="neonText" id="anime-annee"></p>
+      <h2 class="neonText">Genre</h2>
+      <p class="neonText" id="anime-genre"></p>
+      <h2 class="neonText">Studio</h2>
+      <p class="neonText" id="anime-studio"></p>
+      <h2 class="neonText">Id</h2>
+      <p class="neonText" id="anime-id"></p>
+
+      <form id="formulaire-modifier">
+        <fieldset>
+          <legend class="neonText">Description de l'animé</legend>
+          <div>
+            <label for="anime-titre" class="neonText">Titre</label>
+            <input type="text" id="anime-t"/>
+          </div>
+          <div>
+            <label for="anime-marque" class="neonText">Année</label>
+            <input type="text" id="anime-a"/>
+          </div>
+          <div>
+            <label for="anime-marque" class="neonText">Genre</label>
+            <input type="text" id="anime-g"/>
+          </div>
+          <div>
+            <label for="anime-marque" class="neonText">Studio</label>
+            <input type="text" id="anime-s"/>
+          </div>
+        </fieldset>
+        <input class="action" type="submit" id="enregistrer" value="Enregistrer"/>
+      </form>
+      <a class="neonText" href="#" class="action">Annuler et revenir sur la liste</a>
+    </div>
+    </script>
+  
+
+</body>
+</html>

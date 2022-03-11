@@ -55,7 +55,6 @@ class AnimeDAO extends Accesseur implements AnimeSQL
   public static function ajouter($anime)
   {
     AnimeDAO::initialiser();
-
     $demandeAjoutAnime = AnimeDAO::$baseDeDonnees->prepare(AnimeDAO::SQL_AJOUTER);
     $demandeAjoutAnime->bindValue(':titre', $anime->titre, PDO::PARAM_STR);
     $demandeAjoutAnime->bindValue(':annee', $anime->annee, PDO::PARAM_STR);

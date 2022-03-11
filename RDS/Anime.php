@@ -3,10 +3,10 @@
   {
     public static $filtres =
       array(
-        'titre' => FILTER_SANITIZE_ENCODED,
-        'annee' => FILTER_SANITIZE_ENCODED,
-        'genre' => FILTER_SANITIZE_ENCODED,
-        'studio' => FILTER_SANITIZE_ENCODED,
+        'titre' => FILTER_SANITIZE_STRING,
+        'annee' => FILTER_SANITIZE_STRING,
+        'genre' => FILTER_SANITIZE_STRING,
+        'studio' => FILTER_SANITIZE_STRING,
         'id' => FILTER_VALIDATE_INT
         
       );

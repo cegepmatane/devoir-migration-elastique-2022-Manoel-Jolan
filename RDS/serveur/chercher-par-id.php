@@ -2,16 +2,12 @@
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST');
 header("Access-Control-Allow-Headers: X-Requested-With");
-
+header('Content-Type: application/json; charset=utf-8');
 
 
 require_once("Anime.php");
 require_once("AnimeDAO.php");
 
-$animeJSON = file_get_contents('php://input');
-$animeObjet = json_decode($animeJSON);
-$anime = new Anime($animeObjet);
-
-$id = AnimeDAO::ajouter($anime);
-echo $id;
-
+$anime = new Anime($_GET);
+$anime = AnimeDAO::chercherParId($anime->id);
+echo urldecode(json_encode($anime));

@@ -12,4 +12,3 @@ $anime = new Anime($animeObjet);
 
 $id = AnimeDAO::ajouter($anime);
 echo $id;
-
